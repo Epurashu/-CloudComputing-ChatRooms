@@ -9,7 +9,12 @@ class HelloWorld
     {
         return "HelloWorldClass";
     }
+
+    private printBye() : String
+    {
+        return "Bye";
+    }
 }
 
-exports.HelloWorld = HelloWorld;
+//exports.HelloWorld = HelloWorld;
 exports.helloWorldFunction = new HelloWorld().printHelloWorld;
