@@ -12,6 +12,6 @@ var HelloWorld = (function () {
     };
     return HelloWorld;
 }());
-//exports.HelloWorld = HelloWorld;
+exports.HelloWorld = HelloWorld;
 exports.helloWorldFunction = new HelloWorld().printHelloWorld;
 //# sourceMappingURL=test.js.map

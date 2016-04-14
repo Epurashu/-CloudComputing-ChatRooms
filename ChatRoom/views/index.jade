@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 CloudChat
+  p Welcome to CloudChat! Choose one of the rooms below, choose your nickname and then start chatting!
+  br
+  ul
+    li
+      a(href="/chat/ws/1") Software Room
+    li
+      a(href="/chat/ws/2") Hardware Room
