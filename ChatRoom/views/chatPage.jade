@@ -1,0 +1,15 @@
+//
+   Created by Costi on 4/13/2016.
+
+doctype html
+html
+    head
+        title CloudChat
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        script(src="/jsClient/FrontendBundle.js")
+    body
+        blockquote
+            textarea(id="#{textAreaId}", rows="30", cols="80")
+            div
+                input(type="text", id="#{textFieldId}", size="80")
+                button(id="#{sendButtonId}") Send!
