@@ -77,6 +77,11 @@ exports.valueForCookieWithName = valueForCookieWithName;
 var CometClientComunicator = (function () {
     function CometClientComunicator() {
     }
+    //.
+    ///
+    ///
+    ///
+    ///
     CometClientComunicator.prototype.sendJSONString = function (jsonString) {
     };
     CometClientComunicator.prototype.setWhenReceivingAJSONString = function (callback) {

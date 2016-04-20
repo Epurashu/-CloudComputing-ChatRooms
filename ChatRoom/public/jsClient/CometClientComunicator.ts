@@ -7,10 +7,23 @@ import Constants = require('../../Definitions');
 
 export class CometClientComunicator implements chatComunicator.ChatClientComunicator
 {
+    //.
+    
+    ///
+    
+    
+    ///
+    
+    
+    ///
+    
+    ///
+    
     sendJSONString(jsonString:string)
     {
         
     }
+    
     setWhenReceivingAJSONString(callback: (jsonString: string) => void)
     {
         

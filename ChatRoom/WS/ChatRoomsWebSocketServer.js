@@ -1,3 +1,4 @@
+"use strict";
 /**
  * Created by Costi on 4/12/2016.
  */
@@ -16,7 +17,7 @@ var ChatUser = (function () {
         return this.websocket;
     };
     return ChatUser;
-})();
+}());
 var ChatRoom = (function () {
     function ChatRoom(name, id) {
         this.roomId = "";
@@ -67,7 +68,7 @@ var ChatRoom = (function () {
         }
     };
     return ChatRoom;
-})();
+}());
 var WSMessageHandler = (function () {
     function WSMessageHandler(roomsMappedById, ws, server) {
         this.roomsMappedById = roomsMappedById;
@@ -141,7 +142,7 @@ var WSMessageHandler = (function () {
         console.log("did broadcast " + message);
     };
     return WSMessageHandler;
-})();
+}());
 var ChatRoomsWebSocketServer = (function () {
     function ChatRoomsWebSocketServer(port) {
         this.serverSocket = new WS.Server({ port: port });
@@ -170,6 +171,14 @@ var ChatRoomsWebSocketServer = (function () {
         }
     };
     return ChatRoomsWebSocketServer;
-})();
+}());
 exports.ChatRoomsWebSocketServer = ChatRoomsWebSocketServer;
+/*
+ {
+ "messageType" : "enterInRoom",
+ "userNickname" : "Costin",
+ "roomId" : "1"
+ }
+
+ */ 
 //# sourceMappingURL=ChatRoomsWebSocketServer.js.map

@@ -1,6 +1,7 @@
 /**
  * Created by Costi on 4/13/2016.
  */
+"use strict";
 exports.kMessageTypeKey = "messageType";
 exports.kEnterInRoomMessageType = "enterInRoom";
 exports.kSendMessageType = "sendMessage";

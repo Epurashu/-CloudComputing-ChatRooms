@@ -226,8 +226,6 @@ class WSMessageHandler
 
 export class ChatRoomsWebSocketServer
 {
-
-    
     private serverSocket : WS.Server;
     private roomsMappedById : {[id: string] : ChatRoom};
     private wsMessageHandlers: Array<WSMessageHandler>;
@@ -270,3 +268,12 @@ export class ChatRoomsWebSocketServer
         }
     }
 }
+
+/*
+ {
+ "messageType" : "enterInRoom",
+ "userNickname" : "Costin",
+ "roomId" : "1"
+ }
+
+ */
